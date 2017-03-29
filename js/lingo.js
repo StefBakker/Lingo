@@ -66,12 +66,18 @@ function checkLetterById(letterToCheck, LetterId) {
 			}
 		else{
 				letterElement.style.backgroundColor = "yellow";
+
 		}
 }
 
 /* Good/Bad Sound */
 function checkCorrectAnswer(){
-	if (eerstelettergroen.style.backgroundColor == "green" && tweedelettergroen.style.backgroundColor == "green" && derdelettergroen.style.backgroundColor == "green" && vierdelettergroen.style.backgroundColor == "green" && vijfdelettergroen.style.backgroundColor == "green"){
+
+	if (tweedelettergroen.style.backgroundColor === "green" 
+		&& derdelettergroen.style.backgroundColor === "green"
+		&& vierdelettergroen.style.backgroundColor === "green"
+		&& vijfdelettergroen.style.backgroundColor === "green"
+		){
 		var audiogoed = new Audio('sounds/lingo_correct.mp3');
 		audiogoed.play();
 	}
